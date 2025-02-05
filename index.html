@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Notes App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Secure Notes App 🔒</h1>
+        
+        <!-- Authentication Section -->
+        <div id="authSection">
+            <input type="email" id="email" placeholder="Enter your email">
+            <input type="password" id="password" placeholder="Enter your password">
+            <button onclick="signup()">Sign Up</button>
+            <button onclick="login()">Login</button>
+        </div>
+
+        <!-- Notes Section (Hidden until Login) -->
+        <div id="notesSection" style="display: none;">
+            <textarea id="noteInput" placeholder="Write or speak your note here..."></textarea>
+<button onclick="addNote()">Add Note</button>
+<button id="voiceButton">🎤 Speak</button>
+            
+            <h2>Your Notes 📝</h2>
+            <div id="notesContainer"></div>
+
+            <h2>All Public Notes 🌍</h2>
+            <div id="allNotesContainer"></div>
+
+            <button onclick="logout()">Logout</button>
+        </div>
+        
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html
+    
+
+
+    

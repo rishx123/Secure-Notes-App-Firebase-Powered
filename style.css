@@ -1,0 +1,172 @@
+/* 🌸 General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 📌 Container */
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* 📝 Heading */
+h1 {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 20px;
+    animation: slideDown 0.8s ease-in-out;
+}
+
+/* 🔐 Authentication Section */
+#authSection input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#authSection input:focus {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* 🎨 Buttons */
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 5px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    box-shadow: 0 5px 15px rgba(255, 121, 121, 0.3);
+}
+
+/* 📜 Notes Section */
+#notesSection {
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+}
+
+textarea:focus {
+    background: rgba(255, 255, 255, 0.8);
+    transform: scale(1.05);
+}
+
+/* 🗒️ Notes Display */
+.note {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 10px;
+    color: #333;
+    font-size: 16px;
+    position: relative;
+    animation: popIn 0.5s ease-in-out;
+}
+
+/* ❌ Delete Button */
+.delete-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: none;
+    background: #ff4d4d;
+    color: white;
+    padding: 5px 8px;
+    font-size: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.delete-btn:hover {
+    background: #e60000;
+    transform: scale(1.2);
+}
+
+/* 🎤 Voice Button */
+#voiceButton {
+    background: linear-gradient(135deg, #84fab0, #8fd3f4);
+}
+
+#voiceButton:hover {
+    background: linear-gradient(135deg, #58cc9a, #5dbde6);
+}
+
+/* 🔄 Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
